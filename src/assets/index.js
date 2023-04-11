@@ -1,2 +1,2 @@
-import navlogo from "./CoviDSTATS.png"
+import navlogo from "./CoviDSTATS(1)(1).png"
 export {navlogo}
