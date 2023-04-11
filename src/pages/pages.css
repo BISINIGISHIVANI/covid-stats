@@ -1,0 +1,12 @@
+/* error page css */
+
+.error-page{
+    text-align: center;
+    font-size: 700;
+}
+
+/* Details Page */
+.detail-chart{
+    width: 75%;
+    margin: 0 auto;
+}
