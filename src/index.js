@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router}from "react-router-dom"
+import { CovidCaseProvider } from './hooks/context/covidContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+    <CovidCaseProvider>
     <App />
+    </CovidCaseProvider>
     </Router>
   </React.StrictMode>
 );

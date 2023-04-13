@@ -8,7 +8,7 @@ const PublicRoutes = () => {
     <div>
         <Routes>
             <Route path="/"element={<LandingPage/>}/>
-            <Route path="/details/1"element={<DetailsPage/>}/>
+            <Route path="/details/:countryName"element={<DetailsPage/>}/>
             <Route path="*"element={<ErrorPage/>}/>
         </Routes>
     </div>
