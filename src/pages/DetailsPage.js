@@ -8,7 +8,7 @@ const DetailsPage = () => {
    const navigate=useNavigate()
    useEffect(()=>{
     getCovidCaseByCountry(setCovidCaseByCountry,countryName)
-   },[])
+   },[countryName])
   return (
     <div>
       <h2>Country Name</h2>
