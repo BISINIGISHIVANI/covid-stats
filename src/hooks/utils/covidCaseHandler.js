@@ -4,10 +4,12 @@ export const getCovidData=async (setCovidCases,setIsLoading)=>{
     try {
         const res=await getCovidService(setCovidCases)
         setIsLoading(true)
-           setTimeout(()=>{
-            setIsLoading(false)
-           },500)
-            setCovidCases(res)
+        if(res.status===200){
+            setTimeout(()=>{
+                setIsLoading(false)
+               },500)
+            setCovidCases(res.data)
+        }
     } catch (error) {
         console.error(error)
     }

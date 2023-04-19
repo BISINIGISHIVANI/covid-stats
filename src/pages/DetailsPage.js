@@ -9,6 +9,7 @@ const DetailsPage = () => {
    useEffect(()=>{
     getCovidCaseByCountry(setCovidCaseByCountry,countryName)
    },[countryName])
+   console.log(covidCasesByCountry)
   return (
     <div>
       <h2>Country Name</h2>
@@ -16,6 +17,7 @@ const DetailsPage = () => {
       <div>
         <div className='detail-chart'>
           chart
+          {covidCasesByCountry["Country_text"]}
         </div>
       </div>
       <button onClick={()=>navigate("/")}>Go Back</button>

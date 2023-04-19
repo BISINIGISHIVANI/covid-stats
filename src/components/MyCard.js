@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import PieChartHeader from '../primeComponents/pie';
-import { useCovidCases } from '../hooks/context/covidContext';
-// import ListOfTableCovidDb from '../primeComponents/table';
+import {ListOfTableCovidDb} from '../primeComponents/table';
         
 const MyCard = () => {
-  const [covidCase,setCovidCase]=useState([])
-  const {covidCases,isLoading}=useCovidCases()
-  useEffect(()=>{
-    setCovidCase(covidCases)
-  },[])
   return (
     <div>
          <h2 className='card-h2'>Analysis Of CovidStats </h2>
@@ -28,10 +22,7 @@ frameborder="0"width="450" height="280"title='2'className='iframe '></iframe>
     </div>
     <hr/>
     <h2 className='card-h2'>Tabulation Analysis</h2>
-    {/* <ListOfTableCovidDb/> */}
-    {isLoading ?
-    (covidCase.map((data)=>"toast")):""}
-    
+    <ListOfTableCovidDb/>
     </div>
   )
 }
