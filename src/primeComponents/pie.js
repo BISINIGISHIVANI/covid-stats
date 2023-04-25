@@ -18,12 +18,14 @@ export default function PieChartHeader() {
                         documentStyle.getPropertyValue('--yellow-500'), 
                         documentStyle.getPropertyValue('--red-500'),
                         documentStyle.getPropertyValue('--green-300'),
-                        documentStyle.getPropertyValue('--green-300'),
+                        documentStyle.getPropertyValue('--pink-300'),
                     ],
                     hoverBackgroundColor: [
                         documentStyle.getPropertyValue('--blue-400'), 
                         documentStyle.getPropertyValue('--yellow-400'), 
-                        documentStyle.getPropertyValue('--green-400')
+                        documentStyle.getPropertyValue('--red-400'),
+                        documentStyle.getPropertyValue('--green-400'),
+                        documentStyle.getPropertyValue('--pink-400'),
                     ]
                 }
             ]

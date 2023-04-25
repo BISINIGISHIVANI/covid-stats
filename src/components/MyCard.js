@@ -12,7 +12,7 @@ const MyCard = () => {
         <p>By Graphs</p>
         <p>By Table </p>
         <p>Details View By Coutry Name</p>
-        <p>Detail view Analysis by Ligraph</p>
+        <p>Detail view Analysis by Linegraph</p>
       </div>
         <div className='align-center'>
         <iframe src="https://covid-19.dataflowkit.com/assets/widget/c19-widget-light.html" 
