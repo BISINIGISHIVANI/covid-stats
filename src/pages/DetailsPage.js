@@ -25,7 +25,7 @@ const DetailsPage = () => {
             return fieldData;
         }
         let result=myData(covidCasesByCountry)
-        let myarry=result.map((v)=>v.split(',').join(""))
+        let myarry=result.map((v)=>{return v.split(',').join("") })
         var j=myarry.reduce((acc,x)=>acc.concat(+x),[])
        
         console.log(j)
